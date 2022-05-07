@@ -1,0 +1,50 @@
+body {
+  overflow: hidden;
+}
+
+button{
+  position: absolute;
+  border: none;
+  background: none;
+  font-family: serif;
+  visibility: hidden;
+  cursor: pointer;
+  padding: ;
+}
+
+#fantasies {
+  visibility: visible;
+  font-size: 10vw;
+}
+
+#are {
+
+  font-size: 20vw;
+  left: 43vw;
+  top: 0vw;
+}
+
+#dreams {
+
+  font-size: 10.5vw;
+}
+
+#meant {
+
+  font-size: 8vw;
+  top: 11vw;
+  left: 76vw;
+}
+
+#tobe {
+
+  top: 11vw;
+  font-size: 20vw;
+}
+#chased {
+
+  font-size: 24vw;
+  top: 26vw;
+  letter-spacing: 5.4vw;
+}
+

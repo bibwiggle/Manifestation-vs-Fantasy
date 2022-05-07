@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Title of the document</title>
+</head>
+
+<body>	
+<button id="clickme">EasyMode</button>
+<div id="a1"> 
+<h1>Manifestation <span>VS</span> Fantasy</h1>
+<h2>DEMANDING</h2>
+<h3>COMFORT</h3>
+<h4><span id="unc"></span> and <span id="clar"></span> is liable to impromptu change</h4>
+<h5>Goals—> Sentimental</h5>
+<h6>Controlled Outcome</h6>
+<h7>Emotional</h7>
+<h8><span></span><p>yourself</p></h8>
+
+</div>
+<div id="a2"><a href="video.html">ENTER</a></div>
+<script>
+        	var clickme = document.getElementById('clickme');
+        	var a1 = document.getElementById('a1');
+        	var a2 = document.getElementById('a2');
+        	clickme.addEventListener('click', function() {
+        	const paused = a1.style.animationPlayState || 'paused';
+        	a1.style.animationPlayState = paused === 'paused' ? 'running' : 'paused';
+});
+        	clickme.addEventListener('click', function(){
+        		a2.style.animationPlayState = 'running'
+        	});
+        	window.onbeforeunload = function () {
+   			window.scrollTo(0,0);
+};
+        </script>
+</body>
+
+</html>

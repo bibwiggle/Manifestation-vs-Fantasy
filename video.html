@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<link rel="stylesheet" href="video.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Title of the document</title>
+</head>
+<body>
+<section>
+<div><button id ="btn1" onclick="document.location='manifest.html'"></button></div>
+<div><button id ="btn2" onclick="document.location='fantasy.html'"></button></div>	
+</section>
+<div id="set-height"></div>
+<video id="v0" tabindex = "0" autobuffer preload>
+  <source type='video/mp4;codecs="avc1.42E01E"' src="WES2.mp4"></source>
+</video>
+<script>
+ 
+     //"Scrolling controls for HTML5 video" by Ollie Rogers on codepen.io
+        var frameNumber = 0, // start video at frame 0
+        // lower numbers = faster playback
+        playbackConst = 5000, 
+        // get page height from video duration
+        setHeight = document.getElementById("set-height"), 
+        // select video element         
+        vid = document.getElementById('v0'); 
+        
+    // dynamically set the page height according to video length
+    vid.addEventListener('loadedmetadata', function() {
+    setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+    });
+
+
+    // Use requestAnimationFrame for smooth playback
+    function scrollPlay(){  
+    var frameNumber  = window.pageYOffset/playbackConst;
+    vid.currentTime  = frameNumber;
+    window.requestAnimationFrame(scrollPlay);
+    }
+
+    window.requestAnimationFrame(scrollPlay);
+</script>
+</body>
+
+</html>

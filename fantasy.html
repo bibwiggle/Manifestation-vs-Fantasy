@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<link rel="stylesheet" href="fantasy.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Title of the document</title>
+</head>
+<body>	
+<div> 
+<button id="fantasies">Fantasies</button>
+</div>
+<div> 
+<button id="are">Are</button>
+</div>
+<div> 
+<button id="dreams">DREAMS</button>
+</div>
+<div> 
+<button id="meant">meant</button>
+</div>
+<div> 
+<button id="tobe">To Be</button>
+</div>
+<div> 
+<button id="chased" onclick="document.location='manifest.html'">Chased</button>
+</div>
+<script>
+          var fantasies = document.getElementById('fantasies');
+          var are = document.getElementById('are');
+          var dreams = document.getElementById('dreams');
+          var meant = document.getElementById('meant');
+          var tobe = document.getElementById('tobe');
+          var chased = document.getElementById('chased');
+
+          fantasies.addEventListener('click', function() {
+            dreams.style.visibility = 'visible'; fantasies.style.visibility = 'hidden';});
+          dreams.addEventListener('click', function() {
+            are.style.visibility = 'visible';});
+          are.addEventListener('click', function() {
+            meant.style.visibility = 'visible';});
+          meant.addEventListener('click', function() {
+            console.log("hello")
+            tobe.style.visibility = 'visible';});
+          tobe.addEventListener('click', function() {
+            chased.style.visibility = 'visible';});
+
+
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+#clickme{
+	background: transparent;
+	opacity: 0%;
+	font-family: "Cairo";
+	left: 93vw;
+	top: 16vw;
+	position: absolute;
+	
+	font-size: 1.2vw;
+	z-index: 0;
+	border: none;
+	letter-spacing: .2vw;
+}
+
+
+div.a2{
+	font-family: "Cairo";
+	z-index: 4;
+	position: absolute;
+	background-color: yellow;
+	width: 520%;
+	animation: mymove3 60s linear;
+	animation-iteration-count: infinite;
+	align-content: center;
+    overflow: hidden;
+}
+h1{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: clip;
+	position: relative;
+	font-size: 1vw;
+}
+
+body{
+	background: darkred;
+	width: 100%;
+	overflow: hidden;
+
+}
+
+div.a1{
+	
+	height: 101.5%;
+	position: absolute;	
+	overflow: hidden;
+	left: -10vw;
+
+}
+
+p{
+	/*overflow: hidden;*/
+	font-family: helvetica;;
+	width: 110%;
+	text-overflow: clip;
+	position: relative;
+	color: yellow;
+	font-size: 1.2vw;
+	text-align: center;
+    letter-spacing: .2vw;
+    line-height:.8
+    font-weight: bold;
+    font-style: italic;
+    line-height: 2;
+}
+
+#btn{
+  background-color: darkmagenta;
+  opacity: 100%;
+  border: none;
+  padding: 5% 5%;
+  text-align: center;
+  display: inline-block;  
+  cursor: pointer;
+  animation: mymove 1.5s linear, mymove2 5s linear; 
+  z-index: 1;
+  animation-iteration-count: infinite;
+  position: absolute;
+  
+}
+
+@keyframes mymove {
+	0%{left: 0%;}
+	25%{left: 88%;}
+	50%{left: 0%;}
+	75%{left: 88%;}
+	100%{transform: rotate(3600deg); left: 0%;}
+}
+@keyframes mymove2 {
+	0%{ top: 0%;}
+	25%{ top: 38%;}
+	50%{ top: 75%;}
+	75%{ top: 38%;}
+	100%{top: 0%;}
+}
+@keyframes mymove3{
+	0%{left: 0%}
+	100%{left: -330%}
+}
+
+
